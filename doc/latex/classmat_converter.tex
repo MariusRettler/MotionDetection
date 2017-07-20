@@ -1,0 +1,124 @@
+\hypertarget{classmat_converter}{}\section{mat\+Converter Class Reference}
+\label{classmat_converter}\index{mat\+Converter@{mat\+Converter}}
+
+
+Die Klasse Mat\+Converter bietet die Möglichkeiten der Konvertierung von\+: ~\newline
+Q\+Image -\/$>$ cv\+::\+Mat ~\newline
+Q\+Pixmap -\/$>$ cv\+::\+Mat ~\newline
+cv\+::\+Mat -\/$>$ Q\+Image ~\newline
+cv\+::\+Mat -\/$>$ Q\+Pixmap.  
+
+
+
+
+{\ttfamily \#include $<$matconverter.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Q\+Image \hyperlink{classmat_converter_a7acedb3a24697000981663c4e12ff368}{Mat\+To\+Q\+Image} (const Mat \&in\+Mat)
+\begin{DoxyCompactList}\small\item\em Konvertiert eine cv\+::\+Mat zu einem Q\+Image. \end{DoxyCompactList}\item 
+static Mat \hyperlink{classmat_converter_ab98d09f930e94a6466334fb005f94d75}{Q\+Image\+To\+Mat} (const Q\+Image \&in\+Image, bool in\+Clone\+Image\+Data=true)
+\begin{DoxyCompactList}\small\item\em Konvertiert ein Q\+Image zu einer cv\+::\+Mat. \end{DoxyCompactList}\item 
+static Q\+Pixmap \hyperlink{classmat_converter_a46a5639a0a16c71396d27325822d19c9}{Mat\+To\+Q\+Pixmap} (const Mat \&in\+Mat)
+\begin{DoxyCompactList}\small\item\em Konervetiert eine cv\+::\+Mat zu einer Q\+Pixmap. \end{DoxyCompactList}\item 
+static Mat \hyperlink{classmat_converter_a93e498ab547fca1459aa20e5a2730fda}{Q\+Pixmap\+To\+Mat} (const Q\+Pixmap \&in\+Pixmap, bool in\+Clone\+Image\+Data=true)
+\begin{DoxyCompactList}\small\item\em Konvertiert eine Q\+Pixmap zu einer cv\+::\+Mat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Die Klasse Mat\+Converter bietet die Möglichkeiten der Konvertierung von\+: ~\newline
+Q\+Image -\/$>$ cv\+::\+Mat ~\newline
+Q\+Pixmap -\/$>$ cv\+::\+Mat ~\newline
+cv\+::\+Mat -\/$>$ Q\+Image ~\newline
+cv\+::\+Mat -\/$>$ Q\+Pixmap. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmat_converter_a7acedb3a24697000981663c4e12ff368}{}\index{mat\+Converter@{mat\+Converter}!Mat\+To\+Q\+Image@{Mat\+To\+Q\+Image}}
+\index{Mat\+To\+Q\+Image@{Mat\+To\+Q\+Image}!mat\+Converter@{mat\+Converter}}
+\subsubsection[{Mat\+To\+Q\+Image(const Mat \&in\+Mat)}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Image mat\+Converter\+::\+Mat\+To\+Q\+Image (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{in\+Mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmat_converter_a7acedb3a24697000981663c4e12ff368}
+
+
+Konvertiert eine cv\+::\+Mat zu einem Q\+Image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Mat} & Die übergebene Matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gibt das konvertierte Q\+Image zurück. 
+\end{DoxyReturn}
+\hypertarget{classmat_converter_a46a5639a0a16c71396d27325822d19c9}{}\index{mat\+Converter@{mat\+Converter}!Mat\+To\+Q\+Pixmap@{Mat\+To\+Q\+Pixmap}}
+\index{Mat\+To\+Q\+Pixmap@{Mat\+To\+Q\+Pixmap}!mat\+Converter@{mat\+Converter}}
+\subsubsection[{Mat\+To\+Q\+Pixmap(const Mat \&in\+Mat)}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap mat\+Converter\+::\+Mat\+To\+Q\+Pixmap (
+\begin{DoxyParamCaption}
+\item[{const Mat \&}]{in\+Mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmat_converter_a46a5639a0a16c71396d27325822d19c9}
+
+
+Konervetiert eine cv\+::\+Mat zu einer Q\+Pixmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Mat} & Die übergebene Matrix. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gibt die konvertierte Q\+Pixmap zurück. 
+\end{DoxyReturn}
+\hypertarget{classmat_converter_ab98d09f930e94a6466334fb005f94d75}{}\index{mat\+Converter@{mat\+Converter}!Q\+Image\+To\+Mat@{Q\+Image\+To\+Mat}}
+\index{Q\+Image\+To\+Mat@{Q\+Image\+To\+Mat}!mat\+Converter@{mat\+Converter}}
+\subsubsection[{Q\+Image\+To\+Mat(const Q\+Image \&in\+Image, bool in\+Clone\+Image\+Data=true)}]{\setlength{\rightskip}{0pt plus 5cm}Mat mat\+Converter\+::\+Q\+Image\+To\+Mat (
+\begin{DoxyParamCaption}
+\item[{const Q\+Image \&}]{in\+Image, }
+\item[{bool}]{in\+Clone\+Image\+Data = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmat_converter_ab98d09f930e94a6466334fb005f94d75}
+
+
+Konvertiert ein Q\+Image zu einer cv\+::\+Mat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Image} & Das übergebene Q\+Image. \\
+\hline
+{\em in\+Clone\+Image\+Data} & Gibt an ob eine Kopie zum konvertieren benutzt werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gibt die konvertierte Matrix zurück. 
+\end{DoxyReturn}
+\hypertarget{classmat_converter_a93e498ab547fca1459aa20e5a2730fda}{}\index{mat\+Converter@{mat\+Converter}!Q\+Pixmap\+To\+Mat@{Q\+Pixmap\+To\+Mat}}
+\index{Q\+Pixmap\+To\+Mat@{Q\+Pixmap\+To\+Mat}!mat\+Converter@{mat\+Converter}}
+\subsubsection[{Q\+Pixmap\+To\+Mat(const Q\+Pixmap \&in\+Pixmap, bool in\+Clone\+Image\+Data=true)}]{\setlength{\rightskip}{0pt plus 5cm}Mat mat\+Converter\+::\+Q\+Pixmap\+To\+Mat (
+\begin{DoxyParamCaption}
+\item[{const Q\+Pixmap \&}]{in\+Pixmap, }
+\item[{bool}]{in\+Clone\+Image\+Data = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classmat_converter_a93e498ab547fca1459aa20e5a2730fda}
+
+
+Konvertiert eine Q\+Pixmap zu einer cv\+::\+Mat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Pixmap} & Die übergebene Q\+Pix\+Map. \\
+\hline
+{\em in\+Clone\+Image\+Data} & Gibt an ob eine Kopie zum konvertieren benutzt werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gibt die konvertierte Matrix zurück. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+matconverter.\+h\item 
+matconverter.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\hypertarget{class_image_service_class}{}\section{Image\+Service\+Class Class Reference}
+\label{class_image_service_class}\index{Image\+Service\+Class@{Image\+Service\+Class}}
+
+
+Die \hyperlink{class_image_service_class}{Image\+Service\+Class} stellt Funktionen zum Berechnen des Unterschieds zwischen 2 oder mehreren Q\+Pix\+Maps oder Matrizen via Open\+C\+V da.  
+
+
+
+
+{\ttfamily \#include $<$imageserviceclass.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_service_class_ac513fca164499b62c9527ee1c1ecaa5f}{}\hyperlink{class_image_service_class_ac513fca164499b62c9527ee1c1ecaa5f}{Image\+Service\+Class} ()\label{class_image_service_class_ac513fca164499b62c9527ee1c1ecaa5f}
+
+\begin{DoxyCompactList}\small\item\em Standard-\/\+Konstruktor. \end{DoxyCompactList}\item 
+void \hyperlink{class_image_service_class_a2285756f94ae97be90c4b22334dbff07}{feed\+Background\+Subtractor} (Q\+Pixmap pixmap)
+\begin{DoxyCompactList}\small\item\em Die Funktion feed\+Background\+Subtractor \char`\"{}füttert\char`\"{} die Hintergrund\+Subtraktion mit Bildern. Aus diesen Bildern berechnet der Hintergrund\+Subtraktor sein Standard-\/\+Hintergrundbild. Je mehr Bilder er erhält, desto genauer wird er kalibriert. \end{DoxyCompactList}\item 
+Q\+Pixmap \hyperlink{class_image_service_class_a2fa440841e840db5435e408ec07e7ae2}{mark\+Moved\+Objects} (Q\+Pixmap current\+Image)
+\begin{DoxyCompactList}\small\item\em Die Funktion mark\+Moved\+Objects, vergleicht die übergebene Q\+Pix\+Map mit dem Hintergrund\+Subtraktor und markiert je nach gesetzter min\+Contour\+Size die Objekte, welche neue ins Bild gekommen sind bzw. welche sich in dem Bild bewegt haben. \end{DoxyCompactList}\item 
+\hypertarget{class_image_service_class_abf1f01b616068d8794fb307067184eae}{}void \hyperlink{class_image_service_class_abf1f01b616068d8794fb307067184eae}{reset} ()\label{class_image_service_class_abf1f01b616068d8794fb307067184eae}
+
+\begin{DoxyCompactList}\small\item\em Die Funktion reset setzt den Hintergrundsubtraktor zurück. \end{DoxyCompactList}\item 
+void \hyperlink{class_image_service_class_a85b5cdecebd7406faf480c2321de5693}{set\+Min\+Contoursize} (int value)
+\begin{DoxyCompactList}\small\item\em Die Funktion set\+Min\+Contoursize setzt die Schwelle, ab wievielen Punkte eine Kontur gezeichnet werden soll. Eine Kontur umrandet ein Objekt in einem Bild. \end{DoxyCompactList}\item 
+void \hyperlink{class_image_service_class_aa65e0b1a885742a37f8cd1fa787794cf}{set\+Thickness} (int value)
+\begin{DoxyCompactList}\small\item\em Die Funktion set\+Thickness, setzt die Dicke der Umrandung. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Die \hyperlink{class_image_service_class}{Image\+Service\+Class} stellt Funktionen zum Berechnen des Unterschieds zwischen 2 oder mehreren Q\+Pix\+Maps oder Matrizen via Open\+C\+V da. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_image_service_class_a2285756f94ae97be90c4b22334dbff07}{}\index{Image\+Service\+Class@{Image\+Service\+Class}!feed\+Background\+Subtractor@{feed\+Background\+Subtractor}}
+\index{feed\+Background\+Subtractor@{feed\+Background\+Subtractor}!Image\+Service\+Class@{Image\+Service\+Class}}
+\subsubsection[{feed\+Background\+Subtractor(\+Q\+Pixmap pixmap)}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Service\+Class\+::feed\+Background\+Subtractor (
+\begin{DoxyParamCaption}
+\item[{Q\+Pixmap}]{pixmap}
+\end{DoxyParamCaption}
+)}\label{class_image_service_class_a2285756f94ae97be90c4b22334dbff07}
+
+
+Die Funktion feed\+Background\+Subtractor \char`\"{}füttert\char`\"{} die Hintergrund\+Subtraktion mit Bildern. Aus diesen Bildern berechnet der Hintergrund\+Subtraktor sein Standard-\/\+Hintergrundbild. Je mehr Bilder er erhält, desto genauer wird er kalibriert. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixmap} & Das Bild, welches dem Hintergrund\+Subtraktor zugespielt wird. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_image_service_class_a2fa440841e840db5435e408ec07e7ae2}{}\index{Image\+Service\+Class@{Image\+Service\+Class}!mark\+Moved\+Objects@{mark\+Moved\+Objects}}
+\index{mark\+Moved\+Objects@{mark\+Moved\+Objects}!Image\+Service\+Class@{Image\+Service\+Class}}
+\subsubsection[{mark\+Moved\+Objects(\+Q\+Pixmap current\+Image)}]{\setlength{\rightskip}{0pt plus 5cm}Q\+Pixmap Image\+Service\+Class\+::mark\+Moved\+Objects (
+\begin{DoxyParamCaption}
+\item[{Q\+Pixmap}]{current\+Image}
+\end{DoxyParamCaption}
+)}\label{class_image_service_class_a2fa440841e840db5435e408ec07e7ae2}
+
+
+Die Funktion mark\+Moved\+Objects, vergleicht die übergebene Q\+Pix\+Map mit dem Hintergrund\+Subtraktor und markiert je nach gesetzter min\+Contour\+Size die Objekte, welche neue ins Bild gekommen sind bzw. welche sich in dem Bild bewegt haben. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Image} & Die Q\+Pix\+Map welche verglichen werden soll. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Eine neue Q\+Pix\+Map mit den markierten Objekten. 
+\end{DoxyReturn}
+\hypertarget{class_image_service_class_a85b5cdecebd7406faf480c2321de5693}{}\index{Image\+Service\+Class@{Image\+Service\+Class}!set\+Min\+Contoursize@{set\+Min\+Contoursize}}
+\index{set\+Min\+Contoursize@{set\+Min\+Contoursize}!Image\+Service\+Class@{Image\+Service\+Class}}
+\subsubsection[{set\+Min\+Contoursize(int value)}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Service\+Class\+::set\+Min\+Contoursize (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_image_service_class_a85b5cdecebd7406faf480c2321de5693}
+
+
+Die Funktion set\+Min\+Contoursize setzt die Schwelle, ab wievielen Punkte eine Kontur gezeichnet werden soll. Eine Kontur umrandet ein Objekt in einem Bild. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Die Anzahl von Punkten, welche ein Kontur besitzen muss, bis diese angezeigt wird. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_image_service_class_aa65e0b1a885742a37f8cd1fa787794cf}{}\index{Image\+Service\+Class@{Image\+Service\+Class}!set\+Thickness@{set\+Thickness}}
+\index{set\+Thickness@{set\+Thickness}!Image\+Service\+Class@{Image\+Service\+Class}}
+\subsubsection[{set\+Thickness(int value)}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Service\+Class\+::set\+Thickness (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_image_service_class_aa65e0b1a885742a37f8cd1fa787794cf}
+
+
+Die Funktion set\+Thickness, setzt die Dicke der Umrandung. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Die Dicke der Umrandung in Pixeln. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+imageserviceclass.\+h\item 
+imageserviceclass.\+cpp\end{DoxyCompactItemize}
